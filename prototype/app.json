@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Aaj Kya Banayein?",
+    "slug": "aaj-kya-banayein",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FBF6EC",
+    "android": {
+      "package": "com.hassankuiux.aajkyabanayein",
+      "adaptiveIcon": {
+        "backgroundColor": "#FBF6EC"
+      },
+      "permissions": []
+    },
+    "plugins": []
+  }
+}
