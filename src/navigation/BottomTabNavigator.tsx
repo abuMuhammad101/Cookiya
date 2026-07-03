@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Bookmark, ChefHat, Home, ShoppingCart } from 'lucide-react-native';
 
-import { HomeScreen } from '../screens/Home/HomeScreen';
+import HomeScreen from '../screens/Home/HomeScreen';
 import { KitchenScreen } from '../screens/Kitchen/KitchenScreen';
 import { SavedScreen } from '../screens/Saved/SavedScreen';
 import { ShoppingScreen } from '../screens/Shopping/ShoppingScreen';
