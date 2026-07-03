@@ -11,7 +11,7 @@ export function createComponentStyles(palette: ColorPalette): ComponentStyles {
     screenContainer: {
       flex: 1,
       backgroundColor: palette.background,
-      paddingHorizontal: spacing.lg,
+      paddingHorizontal: spacing.xl,
     },
 
     sectionHeaderContainer: {
@@ -52,8 +52,10 @@ export function createComponentStyles(palette: ColorPalette): ComponentStyles {
     },
 
     secondaryButton: {
-      backgroundColor: palette.secondary,
+      backgroundColor: palette.card,
       borderRadius: borderRadius.pill,
+      borderWidth: 1,
+      borderColor: palette.border,
       paddingVertical: spacing.md,
       paddingHorizontal: spacing.xxl,
       alignItems: 'center',
@@ -163,6 +165,101 @@ export function createComponentStyles(palette: ColorPalette): ComponentStyles {
       fontWeight: '600',
       textTransform: 'uppercase',
       letterSpacing: 0.5,
+    },
+
+    iconButton: {
+      width: 44,
+      height: 44,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: borderRadius.pill,
+    },
+
+    divider: {
+      height: 1,
+      backgroundColor: palette.border,
+    },
+
+    emptyState: {
+      padding: spacing.huge,
+      alignItems: 'center',
+    },
+
+    emptyStateTitle: {
+      ...typography.subtitle,
+      color: palette.textPrimary,
+      textAlign: 'center',
+      marginTop: spacing.sm,
+      marginBottom: spacing.xs,
+    },
+
+    emptyStateDescription: {
+      ...typography.bodySmall,
+      color: palette.textSecondary,
+      textAlign: 'center',
+    },
+
+    recipeCard: {
+      backgroundColor: palette.card,
+      borderRadius: borderRadius.lg,
+      borderWidth: 1,
+      borderColor: palette.border,
+      padding: spacing.md + 2,
+      gap: spacing.sm,
+      ...shadows.low,
+    },
+
+    recipeCardTitle: {
+      ...typography.bodySmall,
+      fontWeight: '600',
+      color: palette.textPrimary,
+      lineHeight: 20,
+    },
+
+    recipeCardMeta: {
+      ...typography.caption,
+      color: palette.textSecondary,
+      fontWeight: '500',
+    },
+
+    categoryChip: {
+      backgroundColor: palette.card,
+      borderRadius: borderRadius.pill,
+      borderWidth: 1,
+      borderColor: palette.border,
+      paddingVertical: spacing.sm,
+      paddingHorizontal: spacing.lg - 1,
+      minHeight: 44,
+      justifyContent: 'center',
+    },
+
+    categoryChipSelected: {
+      backgroundColor: palette.textPrimary,
+      borderColor: palette.textPrimary,
+    },
+
+    categoryChipText: {
+      ...typography.bodySmall,
+      fontWeight: '600',
+      color: palette.textSecondary,
+    },
+
+    categoryChipTextSelected: {
+      color: palette.textInverse,
+    },
+
+    ingredientChip: {
+      backgroundColor: palette.successLight,
+      borderRadius: borderRadius.pill,
+      paddingVertical: spacing.xs + 1,
+      paddingHorizontal: spacing.sm + 2,
+      alignSelf: 'flex-start',
+    },
+
+    ingredientChipText: {
+      ...typography.caption,
+      color: palette.accentDark,
+      fontWeight: '600',
     },
   };
 }

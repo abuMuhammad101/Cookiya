@@ -119,6 +119,20 @@ export interface ComponentStyles {
   chipSelectedText: TextStyle;
   tag: ViewStyle;
   tagText: TextStyle;
+  iconButton: ViewStyle;
+  divider: ViewStyle;
+  emptyState: ViewStyle;
+  emptyStateTitle: TextStyle;
+  emptyStateDescription: TextStyle;
+  recipeCard: ViewStyle;
+  recipeCardTitle: TextStyle;
+  recipeCardMeta: TextStyle;
+  categoryChip: ViewStyle;
+  categoryChipSelected: ViewStyle;
+  categoryChipText: TextStyle;
+  categoryChipTextSelected: TextStyle;
+  ingredientChip: ViewStyle;
+  ingredientChipText: TextStyle;
 }
 
 export interface Theme {
